@@ -1,0 +1,8 @@
+path: ../data/processed # dataset root dir
+train: train/images
+val: val/images
+test: test/images
+nc: 2
+names:
+  0: text
+  1: face
