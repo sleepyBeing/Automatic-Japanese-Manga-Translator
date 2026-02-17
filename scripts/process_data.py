@@ -6,8 +6,9 @@ from pathlib import Path
 from tqdm import tqdm
 
 # Configuration
-RAW_DATA_DIR = Path("data/raw")
-PROCESSED_DATA_DIR = Path("data/processed")
+BASE_DIR = Path(__file__).resolve().parent.parent
+RAW_DATA_DIR = BASE_DIR / "data" / "raw"
+PROCESSED_DATA_DIR = BASE_DIR / "data" / "processed"
 IMAGES_DIR = RAW_DATA_DIR / "images"
 ANNOTATIONS_DIR = RAW_DATA_DIR / "annotations"
 
