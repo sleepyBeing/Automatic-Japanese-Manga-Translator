@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Virtual Environments
+yolov8-env/
+.env
+.venv
+env/
+venv/
+
+# Project Specific
+data/
+runs/
+*.pt
+
+# IDEs
+.vscode/
+.idea/
