@@ -1,2 +1,5 @@
 ultralytics
 tqdm
+manga-ocr
+simple-lama-inpainting
+pillow
