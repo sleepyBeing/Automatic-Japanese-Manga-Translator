@@ -13,8 +13,6 @@ def test():
     model = YOLO(weights_path)
     
     # Run evaluation on the test set defined in data.yaml
-    # results = model.val(data="data.yaml", split='test')
-    # Use split='test' if you have a test set, otherwise split='val'
     print("Starting evaluation on test set...")
     results = model.val(data="data.yaml", split='test', name="manga_test_results")
     
