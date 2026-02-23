@@ -3,3 +3,6 @@ tqdm
 manga-ocr
 simple-lama-inpainting
 pillow
+transformers
+sacremoses
+sentencepiece
