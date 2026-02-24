@@ -5,7 +5,7 @@ import os
 def main():
     # Device selection logic
     if torch.cuda.is_available():
-        device = 0  # Use the first NVIDIA GPU
+        device = 0  
     elif hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
         device = "mps"
     else:                                                        
@@ -13,7 +13,7 @@ def main():
     
     print(f"Using device: {device}")
 
-    # Load a model (yolov8n is good, yolov8s is better if training is fast enough)
+    # Load a model
     model = YOLO("yolov8n.pt") 
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -24,7 +24,7 @@ def main():
         data="data.yaml",  # path to dataset YAML
         epochs=100,  # epoch
         imgsz=416,  # image size
-        device=device,  #train on mps, cuda, or cpu
+        device=device,  
         name="manga_translator",  # experiment name
         plots=True,  # save plots
         batch=4, # batch size
